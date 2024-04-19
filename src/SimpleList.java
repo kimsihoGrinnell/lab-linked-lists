@@ -6,6 +6,5 @@ import java.util.ListIterator;
  */
 public interface SimpleList<T> extends Iterable<T> {
   public Iterator<T> iterator();
-
   public ListIterator<T> listIterator();
 } // interface SimpleList<T>
