@@ -66,9 +66,7 @@ public class Node2<T> {
    */
   Node2<T> insertAfter(T value) {
     Node2<T> tmp = new Node2<T>(this, value, this.next);
-    if (this.next != null) {
-      this.next.prev = tmp;
-    } // if
+    this.next.prev = tmp;
     this.next = tmp;
     return tmp;
   } // insertAfter
